@@ -66,9 +66,9 @@ while True:
     elif choice == 4:
         found = False
         for i,p in enumerate(car_park):
-            delete_id = input('nhập id cần tìm: ')
+            delete_id = int(input('nhập id cần tìm: '))
             if delete_id == p['id']:
-                p.pop(i)
+                car_park.pop(i)
                 found = True
                 print(f' “Đã xóa xe ID {p['id']} thành công!”')
                 break
